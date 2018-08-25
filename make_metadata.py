@@ -50,7 +50,7 @@ while pos < size:
 
     #print(tag + ":" + str_data + ":" + str(pos))
     if tag in meta_dict:
-        str += "-metadata \"" + meta_dict[tag] + "\"= \"" + str_data[:-1] + "\" "
+        str += "-metadata \"" + meta_dict[tag] + "\"=\"" + str_data[:-1].replace(' ', '　') + "\" "
 
 print(str)
     
